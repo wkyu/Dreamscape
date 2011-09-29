@@ -1,0 +1,22 @@
+{{extend 'layouts/static.html'}}
+<style>
+	.email_input {
+		float: left;
+	}
+	.email_submit {
+		float: left;
+	}
+</style>
+<h1>Dreamscape</h1>
+<p>Share your dreams with other dreamers to turn passions to realities.</p>
+<h3>Coming Soon!!</h2>
+	
+{{=form.custom.begin}}
+<div>
+	<div class="email_input">Email: {{=form.custom.widget.email}}</div>
+	<div class="email_submit">{{=form.custom.submit}}</div>
+</div>
+<div class="clear"></div>
+{{=form.custom.end}}
+{{pass}}
+
